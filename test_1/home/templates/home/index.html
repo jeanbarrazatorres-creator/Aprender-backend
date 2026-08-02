@@ -1,14 +1,9 @@
-<DOCTYPE html>
-    <html lang = "es">
-        <head>
-            <meta charset = "UTF-8">
-            <title> Tienda de videojuegos </title>
-        </head>
-        <body>
-            <h1> Bienvenido a la tienda de videojuegos </h1>
-            <p> Aquí podrás encontrar los mejores videojuegos del mercado. </p>
-            <footer>
-                 <a href="{% url 'contacto' %}">Contacto</a>
-            </footer>
-            </body>
-    </html>
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} tienda en videojuegos {% endblock %}
+
+{% block content %}
+    <h1> Bienvenido a la tienda de videojuegos </h1>
+    <p> Aquí podrás encontrar los mejores videojuegos del mercado. </p>
+{% endblock %}

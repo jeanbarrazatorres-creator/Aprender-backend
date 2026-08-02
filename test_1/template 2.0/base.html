@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %} -tienda en videojuegos{% endblock %} </title>
+    <!-- aqui va los scripts, imagenes, o codigo css que quieres en toda las paginas sin block-->
+
+    </head>
+    <body>
+        {% block content  %}
+          <!-- aqui va el conteido de la pagina -->
+        {% endblock %}
+        <footer>
+            <p>&copy; 2023 Tienda de Videojuegos. Todos los derechos reservados.</p>
+            <a href = "{% url 'home'%}"> inicio </a>
+            <a href = "{% url 'contacto'%}"> contacto </a>
+        </footer>
+    </body> 
