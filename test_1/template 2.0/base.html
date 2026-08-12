@@ -11,9 +11,15 @@
         {% block content  %}
           <!-- aqui va el conteido de la pagina -->
         {% endblock %}
-        <footer>
-            <p>&copy; 2023 Tienda de Videojuegos. Todos los derechos reservados.</p>
-            <a href = "{% url 'home'%}"> inicio </a>
-            <a href = "{% url 'contacto'%}"> contacto </a>
-        </footer>
+        <ul>
+            <li>
+                <a href = "{% url 'home' %}"> inicio </a>
+            </li>
+            <li>
+                <a href = "{% url 'contacto' %}"> contacto </a>
+            </li>
+            <li>
+                 <a href = "{% url 'usuarios' %}"> usuarios </a>
+            </li>
+        </ul>
     </body> 
